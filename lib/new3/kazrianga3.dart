@@ -1,0 +1,117 @@
+import 'package:flutter/material.dart';
+
+class Kaziranga3 extends StatefulWidget {
+  const Kaziranga3({super.key});
+
+  @override
+  State<Kaziranga3> createState() => _Kaziranga3State();
+}
+
+class _Kaziranga3State extends State<Kaziranga3> {
+  @override
+  Widget build(BuildContext context) {
+    final width = MediaQuery.of(context).size.width;
+    final height = MediaQuery.of(context).size.height;
+
+    return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.green.shade700,
+        title: Text(
+          "Things To Do",
+          style: TextStyle(
+            fontSize: width * 0.05,
+            letterSpacing: width * 0.0012,
+          ),
+        ),
+        toolbarHeight: height * 0.065,
+      ),
+      body: ListView(
+        padding: EdgeInsets.all(width * 0.03),
+        children: [
+          buildCard(
+            image: "assets/images/rhino.jpeg",
+            title: "Rhino Safari",
+            description:
+            "Explore the grasslands of Kaziranga to spot the iconic one-horned rhinoceros. Take a jeep or elephant safari for a thrilling wildlife experience.",
+            width: width,
+            height: height,
+          ),
+          buildCard(
+            image: "assets/images/boat2.jpeg",
+            title: "Boat Ride",
+            description:
+            "Enjoy a serene boat ride on the Brahmaputra River. Spot river dolphins, migratory birds, and witness the lush beauty surrounding the park.",
+            width: width,
+            height: height,
+          ),
+          buildCard(
+            image: "assets/images/cultural.jpeg",
+            title: "Cultural Show",
+            description:
+            "Attend traditional Assamese dance and music performances in nearby villages. Experience the rich culture and heritage of Assam.",
+            width: width,
+            height: height,
+          ),
+        ],
+      ),
+    );
+  }
+
+  Widget buildCard({
+    required String image,
+    required String title,
+    required String description,
+    required double width,
+    required double height,
+  }) {
+    return Card(
+      elevation: 4,
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(width * 0.025),
+      ),
+      margin: EdgeInsets.only(bottom: height * 0.01),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          ClipRRect(
+            borderRadius:
+            BorderRadius.vertical(top: Radius.circular(width * 0.025)),
+            child: Image.asset(
+              image,
+              height: height * 0.17,
+              width: double.infinity,
+              fit: BoxFit.cover,
+            ),
+          ),
+          Padding(
+            padding: EdgeInsets.all(width * 0.03),
+            child: Text(
+              title,
+              style: TextStyle(
+                fontSize: width * 0.048,
+                fontWeight: FontWeight.bold,
+                letterSpacing: width * 0.001,
+              ),
+            ),
+          ),
+          Padding(
+            padding: EdgeInsets.fromLTRB(
+              width * 0.03,
+              0,
+              width * 0.03,
+              height * 0.008,
+            ),
+            child: Text(
+              description,
+              style: TextStyle(
+                fontSize: width * 0.04,
+                height: 1.35,
+                letterSpacing: width * 0.0008,
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
