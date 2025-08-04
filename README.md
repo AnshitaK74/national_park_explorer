@@ -1,16 +1,15 @@
-# internship
+# National Park Explorer
 
-A new Flutter project.
+A new Flutter app that showcases the top indian national parks along with their basic description, visiting times , nearby hotels decription and activities description of like what you can do.
 
-## Getting Started
+## Features
 
-This project is a starting point for a Flutter application.
+- List of 7 to 8 national parks.
+- Basic Description and heighlights of each park with best time to visit etc.
+- Nearby Hotels informations.
+- Activities or safaries to do.
 
-A few resources to get you started if this is your first Flutter project:
+  #Tech Stack
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+  -Flutter
+  -Firebase
