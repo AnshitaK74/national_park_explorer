@@ -1,13 +1,15 @@
 # National Park Explorer
 
-A new Flutter app that showcases the top indian national parks along with their basic description, visiting times , nearby hotels decription and activities description of like what you can do.
-
-## Features
-
-- List of 7 to 8 national parks.
-- Basic Description and heighlights of each park with best time to visit etc.
-- Nearby Hotels informations.
-- Activities or safaries to do.
+National Park Explorer is a feature-rich Flutter mobile application designed to help users explore India’s major national parks and wildlife destinations. The app provides comprehensive information about parks such as Kanha, Kaziranga, Ranthambore, and others, enabling users to plan wildlife trips efficiently.
+The application includes park details like best time to visit, entry timings, safari zones, and activities, along with interactive lodge and hotel booking screens showcasing room details, amenities, and pricing. A consistent card-based UI, image galleries, and responsive layouts ensure a smooth user experience across all screen sizes.
+Built using Flutter and Dart, the app follows a modular architecture with reusable widgets and MediaQuery-based responsiveness. Navigation between park listings, detailed park pages, safari information, and booking screens is seamless and intuitive. The project emphasizes clean UI design, scalability, and real-world usability.
+Key Highlights:
+National park listings with safari and activity details
+Lodge and hotel booking UI with room and amenity information
+Responsive design using MediaQuery for multiple screen sizes
+Reusable Flutter widgets and clean UI architecture
+Smooth navigation and image-rich user experience
+Tech Stack: Flutter, Dart, Material UI
 
   #Tech Stack
 
